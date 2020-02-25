@@ -15,7 +15,7 @@ class Pengembalian extends Migration
     {
         Schema::create('pengembalian', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('id_integer');
+            $table->bigInteger('id_transaksi');
             $table->date('tgl_pengembalian');
             $table->boolean('denda');
             $table->Integer('nominal');
